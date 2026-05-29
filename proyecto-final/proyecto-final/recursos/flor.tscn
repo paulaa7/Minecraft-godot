@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=4 uid="uid://dp5yj5scsg8i"]
+
+[ext_resource type="Texture2D" uid="uid://db04acb2ft2f0" path="res://modelos/flor/source/model_0.png" id="1_ulsga"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojdjk"]
+resource_name = "material_0"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_ulsga")
+texture_filter = 0
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_diios"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAgABAAQABQAAAAMABQABAAAAAwACAAYABgAFAAMABgACAAQABwABAAUABwAFAAYAAQAHAAQABAAHAAYA"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAA/////wAAAAAAAAAAAAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kiiqx"]
+resource_name = "blockbench_export_mesh35"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"attribute_data": PackedByteArray("XdUfgFLVH4Bd1f//UtX//7PqH4Co6h+As+r//6jq//+o6h+AXdUfgKjq339d1d9///8fgLPqH4D//99/s+rff7PqH4D//x+As+r///////9d1R+AqOofgF3V//+o6v//"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcACAAJAAoACgAJAAsADAANAA4ADgANAA8AEAARABIAEgARABMAFAAVABYAFgAVABcA"),
+"material": SubResource("StandardMaterial3D_ojdjk"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(1.4997559, 0.24975586, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAA//8AAAAAAAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAA//8AAAAA//8AAP///////wAA//8AAP//////////////////AAAAAP///////wAA/////wAAAAAAAP////8AAAAA//8AAP////8AgP///////wCAAAAAAP//AID//wAA//8AgP////8AAP//AAD//wAA/////wAAAAD//wAAAAAAAP///7//f/+//3//v/9//7//f/8//3//P/9//z//f/8//3//f/+//3//v/9//7//f/+//3//P/9//z//f/8//3//P/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_diios")
+
+[node name="flor2" type="MeshInstance3D"]
+transform = Transform3D(0.7071067, 0, 0.7071068, 0, 1, 0, -0.7071068, 0, 0.7071067, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_kiiqx")
+skeleton = NodePath("")

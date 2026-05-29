@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://brn6wlqgs6csi"]
+
+[ext_resource type="MeshLibrary" uid="uid://bfo8otxifqtyu" path="res://recursos/bloques.tres" id="1_h8b72"]
+
+[node name="puente" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+mesh_library = ExtResource("1_h8b72")
+cell_size = Vector3(0.2, 0.2, 0.2)
+data = {
+"cells": PackedInt32Array(65530, 0, 1507337, 4, 0, 1507337, 65520, 0, 1507337, 14, 0, 1114121)
+}

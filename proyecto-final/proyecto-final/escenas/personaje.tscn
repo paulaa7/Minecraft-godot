@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bulvliit0hubn"]
+
+[ext_resource type="Script" uid="uid://bibl0rbypx4qv" path="res://scripts/personaje.gd" id="1_4e5bt"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_38t12"]
+radius = 0.9
+height = 3.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4e5bt"]
+radius = 0.9
+height = 3.0
+
+[node name="personaje" type="CharacterBody3D"]
+script = ExtResource("1_4e5bt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_38t12")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_4e5bt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4887236, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+target_position = Vector3(0, 0, -8)

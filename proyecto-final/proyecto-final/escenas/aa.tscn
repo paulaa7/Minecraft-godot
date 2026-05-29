@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=4 uid="uid://b0vtrljjji13h"]
+
+[ext_resource type="Texture2D" uid="uid://db04acb2ft2f0" path="res://modelos/flor/source/model_0.png" id="1_fsttj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l4c70"]
+resource_name = "material_0"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_fsttj")
+texture_filter = 0
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pxyxd"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAgABAAQABQAAAAMABQABAAAAAwACAAYABgAFAAMABgACAAQABwABAAUABwAFAAYAAQAHAAQABAAHAAYA"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAA/////wAAAAAAAAAAAAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fv7rd"]
+resource_name = "blockbench_export_mesh3"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"attribute_data": PackedByteArray("D4AfgO9/H4APgP//73///xfAH4D3vx+AF8D///e////3vx+AD4AfgPe/338PgN9///8fgBfAH4D//99/F8DffxfAH4D//x+AF8D///////8PgB+A978fgA+A///3v///"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcACAAJAAoACgAJAAsADAANAA4ADgANAA8AEAARABIAEgARABMAFAAVABYAFgAVABcA"),
+"material": SubResource("StandardMaterial3D_l4c70"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0.49975586, 0.24975586, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAA//8AAAAAAAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAA//8AAAAA//8AAP///////wAA//8AAP//////////////////AAAAAP///////wAA/////wAAAAAAAP////8AAAAA//8AAP////8AgP///////wCAAAAAAP//AID//wAA//8AgP////8AAP//AAD//wAA/////wAAAAD//wAAAAAAAP///7//f/+//3//v/9//7//f/8//3//P/9//z//f/8//3//f/+//3//v/9//7//f/+//3//P/9//z//f/8//3//P/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pxyxd")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pfsk2"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAgABAAQABQAAAAMABQABAAAAAwACAAYABgAFAAMABgACAAQABwABAAUABwAFAAYAAQAHAAQABAAHAAYA"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAA/////wAAAAAAAAAAAAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vof3v"]
+resource_name = "blockbench_export_mesh4"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0, 1, 1, 6.25e-05),
+"attribute_data": PackedByteArray("D4AfgO9/H4APgP//73///xfAH4D3vx+AF8D///e////3vx+AD4AfgPe/338PgN9///8fgBfAH4D//99/F8DffxfAH4D//x+AF8D///////8PgB+A978fgA+A///3v///"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcACAAJAAoACgAJAAsADAANAA4ADgANAA8AEAARABIAEgARABMAFAAVABYAFgAVABcA"),
+"material": SubResource("StandardMaterial3D_l4c70"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0.49975586, 0.24975586, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("////////AAD/////AAAAAP//AAD//wAA//8AAAAAAAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAA//8AAAAA//8AAP///////wAA//8AAP//////////////////AAAAAP///////wAA/////wAAAAAAAP////8AAAAA//8AAP////8AgP///////wCAAAAAAP//AID//wAA//8AgP////8AAP//AAD//wAA/////wAAAAD//wAAAAAAAP///7//f/+//3//v/9//7//f/8//3//P/9//z//f/8//3//f/+//3//v/9//7//f/+//3//P/9//z//f/8//3//P/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pfsk2")
+
+[node name="bone2" type="Node3D"]
+
+[node name="cube3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7071067, 0, 0.7071068, 0, 1, 0, -0.7071068, 0, 0.7071067, 2.4375, 0, 0)
+mesh = SubResource("ArrayMesh_fv7rd")
+skeleton = NodePath("")
+
+[node name="cube4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7071067, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.7071067, 2.4375, 0, 0)
+mesh = SubResource("ArrayMesh_vof3v")
+skeleton = NodePath("")
